@@ -5,9 +5,13 @@ import com.example.inventoryservice.repository.InventoryRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+
 import org.springframework.context.annotation.Bean;
 
+
 @SpringBootApplication
+
 public class InventoryServiceApplication {
 
 	public static void main(String[] args) {
@@ -19,7 +23,7 @@ public class InventoryServiceApplication {
 		return args -> {
 			Inventory inventory = new Inventory();
 			inventory.setSkuCode("sandwich");
-			inventory.setQuantity(100);
+			inventory.setQuantity(0);
 
 			Inventory inventory1 = new Inventory();
 			inventory1.setSkuCode("pizza");
